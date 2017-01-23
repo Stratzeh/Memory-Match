@@ -75,7 +75,7 @@ function setUp() {
             }
         });
 
-        cell.addEventListener('keydown', function(event) {
+        document.addEventListener('keydown', function(event) {
             if(event.key > 0 && event.ket < 10) {
                 grid[event.key + 1].click();
             }
